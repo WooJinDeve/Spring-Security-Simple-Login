@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/bootstrap.min.css}"
+          href="../css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 560px;
+        }
+
+    </style>
+    <title>로그인 페이지</title>
+</head>
+<body>
+<div class="container">
+    <h1>로그인 페이지</h1>
+
+    <form action="/login" method="post">
+        <div>
+            <label for="email">이메일</label>
+            <input type="text" id="email" name = "email" class="form-control" placeholder="email">
+        </div>
+        <br/>
+        <div>
+            <label for="password">비밀번호</label>
+            <input type="text" id="password" name = "password" class="form-control" placeholder="Password">
+        </div>
+        <br/>
+        <button class="btn btn-primary">로그인</button>
+        <a href="/join">회원가입을 아직하지 않으셨나요?</a>
+    </form>
+</div>
+</body>
+</html>
